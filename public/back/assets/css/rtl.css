@@ -1,0 +1,168 @@
+.form-icon {
+
+    right: unset !important;
+    left: 8px !important;
+
+}
+.card .card-header .card-header-right {
+    right: unset !important;
+   
+    left: 10px;
+  
+}
+.dropdown-menu.dropdown-menu-right {
+    left: 0 !important;
+   
+    right: auto !important;}
+
+    /* .feather {
+        float: right;
+        margin-left: 5px;
+    } */
+ 
+ 
+    .pcoded-navbar.theme-horizontal .pcoded-inner-navbar .pcoded-hasmenu .pcoded-submenu a:before {
+        right: 5px;
+        left:unset !important;
+    }
+    .search-bar .close {
+        right: auto !important;
+        left: 9px;
+        
+    }
+    .alert-dismissible .close {
+        right: auto !important;
+        left: 0;
+      
+    }
+    .btn-right-radius {
+        border-top-right-radius: 2px !important;
+        border-bottom-right-radius:2px !important;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+    .btn-left-radius {
+        border-top-left-radius: 2px !important;
+        border-bottom-left-radius:2px !important;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+    .modal-header .close {
+        padding: 20px 20px;
+        margin: -20px auto -20px -20px !important;
+    }
+    .card .card-header .card-header-right {
+        left: 10px;
+        right: auto !important;
+    }
+    .latest-update-card .card-body .latest-update-box::after {
+        left: unset !important;
+        right: 110px;
+        
+    }
+    .pcoded-header .dropdown .notification .noti-body li .n-time {
+    
+        float: left!important;
+    }
+
+    .mob-toggler1, .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 37px;
+        height: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0 10px;
+    }
+  
+    .card-body1 {
+        
+        direction: ltr !important;
+        text-align: left !important;
+    }
+    .chat-card .received-chat .msg::after {
+      right: unset !important;
+        left: -7px;
+       
+    }
+    .custom-file-label::after {
+        right: unset !important;
+        left: 0;
+       
+    }
+
+    .custom-control-label::before {
+
+        right: -1.5rem;
+      margin-left: 20px;
+    }
+    .custom-control {
+        position: relative;
+        display: block;
+        min-height: 1.5rem;
+        padding-right: 2.5rem;
+    }
+    .form-check-label {
+       
+        margin-right: 20px;
+    }
+
+    .custom-checkbox .custom-control-label::after{
+        left: 8px !important;
+    }
+.update-icon {
+        
+        margin-right: 29px !important;
+    }
+    .card.full-card{
+        width: unset !important;
+    }
+    .ps__rail-y {
+        z-index: 5;
+        right: 0 !important;
+    }
+    .pcoded-navbar .pcoded-inner-navbar li > a > .pcoded-micon {
+      
+        margin-right: unset !important;
+       
+    }
+    .alert-dismissible {
+        padding-right: 1rem!important;
+    }
+    .tox-notifications-container{
+        display: none !important ;
+    }
+    
+@font-face {
+    font-family: iransans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/iransans/eot/IRANSansWeb(FaNum).eot');
+    src: url('../fonts/iransans/eot/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/iransans/woff2/IRANSansWeb(FaNum).woff2') format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+        url('../fonts/iransans/woff/IRANSansWeb(FaNum).woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/iransans/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+
+@font-face {
+    font-family: iransans-bold;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/iransans/eot/IRANSansWeb(FaNum)_Bold.eot');
+    src: url('../fonts/iransans/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */
+        url('../fonts/iransans/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/
+        url('../fonts/iransans/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../fonts/iransans/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+}
+body{
+    font-family: iransans !important;
+
+}

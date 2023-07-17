@@ -4,15 +4,16 @@
 
             <div class="">
                 <div class="main-menu-header">
-                    {{-- @if (auth()->user()->avatar)
-                    <img src="{{ asset('uploads/employee/' . auth()->user()->avatar) }}" class="img-radius" alt="post_img">
+                    @if (auth()->user()->avatar)
+                    <img src="{{ asset('uploads/employee/' . auth()->user()->avatar) }}" class="img-radius"
+                        alt="post_img">
                     @else
                     <img class="img-radius" src="{{url('/back/assets/images/user/avatar-2.jpg')}}"
-                    alt="User-Profile-Image">
-                    @endif --}}
-                  
-                    <div class="user-details">
-                        <div id="more-details">نام کاربری <i class="fa fa-caret-down"></i></div>
+                        alt="User-Profile-Image">
+                    @endif
+
+                    <div class="user-details px-2">
+                        <div id="more-details">{{auth()->user()->name}}<i class="fa fa-caret-down"></i></div>
                     </div>
                 </div>
                 <div class="collapse" id="nav-user-link">
@@ -22,9 +23,10 @@
                         <li class="list-group-item"><a href="#!"><i class="feather icon-settings m-r-5"></i>Settings</a>
                         </li> --}}
                         <li class="list-group-item">
-                            <form action="" method="post">
+                            <form action="{{ route('logout') }}" method="post">
                                 @csrf
-                                <button class="btn logout-btn"><i class="feather icon-log-out m-r-5"></i> خروج</button>
+                                <button class="btn logout-btn"><i class="feather icon-log-out "></i> <span
+                                        class="">خروج</span></button>
                             </form>
                         </li>
                     </ul>
@@ -45,9 +47,11 @@
                 </li>
                 <li class="nav-item pcoded-hasmenu">
                     <a href="#!" class="nav-link "><span class="pcoded-micon">
-                            <i class="fa fa-users icon-layout"></i></span><span class="pcoded-mtext">کاربران</span></a>
+                            <i class="fa fa-users icon-layout"></i></span><span class="pcoded-mtext">خبرها</span></a>
                     <ul class="pcoded-submenu">
-                        <li><a href="" target="">لیست کاربران</a></li>
+                        <li><a href="{{route('admin_news')}}" target="_blank">خبرها</a></li>
+                        <li><a href="{{route('admin_news_create')}}" target="_blank">ایجاد خبر</a></li>
+
                     </ul>
                 </li>
                 {{-- <li class="nav-item pcoded-hasmenu">

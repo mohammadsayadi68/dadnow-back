@@ -25,7 +25,7 @@ Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']
  });
 
 
-Route::prefix('/admin')->middleware('auth')->name('admin')->group( function(){
+Route::prefix('/admin')->middleware('auth')->middleware('checkadmin')->name('admin')->group( function(){
     Route::get('/', [App\Http\Controllers\AdminController::class, 'index'])->name('');
     Route::prefix('/news')->name('_news')->group( function(){
 

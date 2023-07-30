@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\NewsController;
+use App\Http\Controllers\API\PodcastController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,5 +18,6 @@ use App\Http\Controllers\API\NewsController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::apiResource('podcast',PodcastController::class);
 Route::apiResource('news',NewsController::class);
 // Route::apiResource('news/{id}',NewsController::class);

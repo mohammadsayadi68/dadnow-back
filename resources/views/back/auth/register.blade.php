@@ -12,7 +12,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-8">
-                            {{-- <div class="card">
+                            <div class="card">
                                 <div class="card-header">{{ __('فرم ثبت نام') }}</div>
 
                                 <div class="card-body">
@@ -95,13 +95,13 @@
 
                                     </form>
                                 </div>
-                            </div> --}}
-                            <div class="card">
+                            </div>
+                            {{-- <div class="card">
                               <div class="p-4 m-4">در حال حاضر امکان ثبت نام وجود ندارد</div>
                               <a class="btn btn-primary" href="{{ route('login') }}">
                                   قبلا ثبت نام کرده ام
                               </a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

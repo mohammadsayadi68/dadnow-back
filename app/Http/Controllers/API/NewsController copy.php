@@ -14,7 +14,7 @@ class NewsController extends Controller
     public function index(){
         // $newses=News::all();
         // return $newses; 
-        return new NewsCollection(News::where('category_id','1')->orderBy('id', 'DESC')->take(3)->get());
+        return new NewsCollection(News::where('category_id','1')->orderBy('id', 'DESC')->take(2)->get());
         // return NewsResource::collection(News::with('user')->paginate(25));
     }
 

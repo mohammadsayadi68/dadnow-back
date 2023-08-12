@@ -17,4 +17,7 @@ class Podcast extends Model
         'status',
         'audio'
     ];
+    public function set(){
+            return $this->belongsTo(Set::class);
+    }
 }

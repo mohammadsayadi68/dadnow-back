@@ -8,21 +8,21 @@
 
         </div>
         <div class="card-body">
-            <form action="{{route('admin_news_store')}}" method="POST">
+            <form action="{{route('admin_news_update',$news)}}" method="POST">
                 @csrf
                 <div class="row">
                     <div class="col-sm-10">
                         <div class="form-group fill">
                             <label class="floating-label" for="Text">عنوان </label>
                             <input class="mb-3 form-control" type="text" name="title"
-                                placeholder="لطفاعنوان خبر را وارد کنید">
+                                placeholder="لطفاعنوان خبر را وارد کنید" value={{$news->title}}>
                         </div>
                     </div>
                     <div class="col-sm-10 mt-3">
                         <div class="form-group fill">
                             <label for="inputState" class="floating-label" for="Text">انتخاب دسته بندی</label>
                             <select id="inputState" name="category_id" class="form-control">
-                                <option value="null" selected="">دسته بندی مورد نظر را انتخاب کنید
+                                <option value="{{$news->category->id}}" selected="">{{$news->category->title}}
                                 </option>
                                 @foreach ($categories as $category)
 
@@ -39,15 +39,14 @@
                                         <i class="fa fa-picture-o"></i> انتخاب تصویر
                                     </a>
                                 </span>
-                                <input id="image" class="form-control" type="text" name="cover">
+                                <input id="image" class="form-control" type="text" name="cover" value={{$news->cover}}>
                             </div>
                             <img id="image" style="margin-top:15px;max-height:100px;">
                         </div>
                     </div>
                     <div class="col-sm-10">
                         <div class="form-group fill">
-                            <textarea class="my-editor" name="description" id="" cols="30" rows="10"></textarea>
-
+                            <textarea class="my-editor" name="description" id="" cols="30" rows="10">{{$news->description}}</textarea>
                         </div>
                     </div>
                     <div class="col-sm-10">

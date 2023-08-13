@@ -54,6 +54,15 @@
 
                     </ul>
                 </li>
+                <li class="nav-item pcoded-hasmenu">
+                    <a href="#!" class="nav-link "><span class="pcoded-micon">
+                            <i class="fa fa-users icon-layout"></i></span><span class="pcoded-mtext">پادکست ها</span></a>
+                    <ul class="pcoded-submenu">
+                        <li><a href="{{route('admin_podcast')}}" target="_blank">لیست پادکست ها</a></li>
+                        <li><a href="{{route('admin_podcast_create')}}" target="_blank"> ایجاد پادکست</a></li>
+
+                    </ul>
+                </li>
                 {{-- <li class="nav-item pcoded-hasmenu">
                     <a href="#!" class="nav-link "><span class="pcoded-micon"><i
                                 class="feather icon-layout"></i></span><span class="pcoded-mtext">دسته بندی

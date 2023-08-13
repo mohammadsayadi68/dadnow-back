@@ -60,6 +60,7 @@ return [
                 'image/gif',
                 'application/pdf',
                 'text/plain',
+                'audio/mpeg'
             ],
         ],
         'image' => [
@@ -74,6 +75,7 @@ return [
                 'image/pjpeg',
                 'image/png',
                 'image/gif',
+                'audio/mpeg'
             ],
         ],
     ],

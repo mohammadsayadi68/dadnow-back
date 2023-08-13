@@ -2,10 +2,11 @@
 @section('content')
 @include('back.parts.messages')
 
+
 <div class="col-xl-12">
     <div class="card">
         <div class="card-header">
-            <h5>مدیریت خبرها</h5>
+            <h5>مدیریت پادکستها</h5>
         </div>
         <div class="card-body table-border-style">
             <div class="table-responsive">
@@ -13,26 +14,29 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th> دسته بندی</th>
+                            <th>دسته بندی </th>
                             <th> عنوان</th>
-                            <th>وضعیت</th>
+                            <th>قسمت </th>
+                            <th>وضعیت نمایش</th>
                             <th>عملیات</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($news as $item)
+                        @foreach ($podcasts as $podcast)
+
                         <tr>
-                            <td>{{$item->id}}</td>
-                            <td>{{$item->category->title}}</td>
-                            <td>{{$item->title}}</td>
+                            <td>{{$podcast->id}}</td>
+                            <td>{{$podcast->set->title}}</td>
+                            <td>{{$podcast->title}}</td>
+                            <td>{{$podcast->part}}</td>
                             <td>
-                                @if ($item->status)
-                                <a href={{route('admin_news_status',$item->id)}}>
+                                @if ($podcast->status)
+                                <a href={{route('admin_podcast_status',$podcast->id)}}>
                                     <span class="badge badge-info">فعال</span>
                                 </a>
 
                                 @else
-                                <a href={{route('admin_news_status',$item->id)}}>
+                                <a href={{route('admin_podcast_status',$podcast->id)}}>
                                     <span class="badge badge-danger">غیرفعال</span>
                                 </a>
 
@@ -42,7 +46,7 @@
                             </td>
 
                             <td>
-                                <a href={{route('admin_news_edit',$item)}} class="btn  btn-primary
+                                <a href={{route('admin_podcast_edit',$podcast)}} class="btn  btn-primary
                                     has-ripple">ویرایش</a>
                             </td>
                         </tr>
